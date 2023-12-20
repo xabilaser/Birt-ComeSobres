@@ -57,13 +57,13 @@
     background-color: transparent;
     margin: 0;
     padding: 1px;
-    z-index:10;
+    z-index:11;
   }
 
   .feijoo{
     position:absolute;
     top:458x;
-    left:536px;
+    left:576px;
   }
 
   .yolanda{
