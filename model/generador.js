@@ -85,3 +85,44 @@ var mapa_antiguo [
    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1],
    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ];
+
+//función para checkear colisiones entre personajes y/o muros
+function checkColisionLeft(prota, muro) {
+    let rect1 = prota.getBoundingClientRect();
+    muro.arrayMuros.forEach(elemento => {
+        let rect2 = elemento.getBoundingClientRect();
+        if (rect1.left <= rect2.right) {
+            return true;
+        } else {return false}
+    });
+}
+
+function checkColisionRight(prota, muro) {
+    let rect1 = prota.getBoundingClientRect();
+    muro.arrayMuros.forEach(elemento => {
+        let rect2 = elemento.getBoundingClientRect();
+        if (rect2.left <= rect1.right) {
+            return true;
+        } else {return false}
+    });
+}
+
+function checkColisionTop(prota, muro) {
+    let rect1 = prota.getBoundingClientRect();
+    muro.arrayMuros.forEach(elemento => {
+        let rect2 = elemento.getBoundingClientRect();
+        if (rect1.top <= rect2.bottom) {
+            return true;
+        } else {return false}
+    });
+}
+       
+function checkColisionBottom(prota, muro) {
+    let rect1 = prota.getBoundingClientRect();
+    muro.arrayMuros.forEach(elemento => {
+        let rect2 = elemento.getBoundingClientRect();
+        if (rect2.top <= rect1.bottom) {
+            return true;
+        } else {return false}
+    });
+}

@@ -4,15 +4,22 @@ class Prota {
         this.id = $(id);
         this.x = x;
         this.y = y;
+        //Punto medio para detectar sobres
+        this.pmX = x + 24;
+        this.pmY = y + 24;
     } 
     //Métodos get y set
     getId() {return this.id;}
     getX() {return this.x;}
     getY() {return this.y;}
+    getpmX() {return this.pmX;}
+    getpmY() {return this.pmY;}
 
     setId(id) {this.id = id;}
     setX(x) {this.x = x;}
     setY(y) {this.y = y;}
+    setpmX(x) {this.pmX = x + 24;}
+    setpmY(y) {this.pmY = y + 24;}
 }
 
 class Rojos extends Prota {
