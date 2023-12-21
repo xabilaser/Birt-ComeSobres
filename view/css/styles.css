@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'Vascan';
+  src: url('../content/fuentes/vascan.ttf') format('font-file-extension');
+}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+label, .logon {
+  font-family: 'Vascan', 'Luckiest Guy';
+  font-size: 28px;
+}
+
+.logon{
+  color:white;
+  height: 48px;
+  width: 250px;
+  background-color: green;
+}
+
+input {
+  border-radius: 16px;
+  width: 250px;
+  height: 33px; 
+  margin: 8px 4px;
+  padding: 7px 9px;
+  vertical-align: middle;
+}
+ .erronea, input{
+    h2{
+      font-family: 'Vascan', 'Luckiest Guy';
+      font-size: 22px;
+      color:rgb(139, 66, 133);
+    }   
+ }
+
+.formu {
+  h2{
+    font-family: 'Vascan', 'Luckiest Guy';
+    font-size: 36px;
+  }
+}
 
 .interface{
     width: 1152px;
